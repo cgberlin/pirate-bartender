@@ -1,5 +1,6 @@
 *{
   box-sizing:border-box;
+  font-family: 'Baloo Chettan', cursive;
 }
 .main-container {
   display:flex;

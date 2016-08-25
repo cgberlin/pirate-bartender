@@ -37,12 +37,26 @@ $('.answer').on('click', function(){
     case 4:
       userPreferences.fruity = yesOrNo;
       questionCount++;
-      createDrink();
+      hideEverything();
+      bartender.mixDrink();
       break;
     default:
       console.log('error with switch and counter');
   }
 });
-function createDrink(){
-  console.log(userPreferences);
-}
+
+function hideEverything(){
+  $('#questions').text('');
+  $('.buttons').hide();
+};
+
+function tellPicky(){
+  $('#questions').text("Can't be so picky matey!!!");
+};
+
+function displayDrink(drinkIngredients) {
+  $('#questions').text("I made ye a drink with a");
+  $.each(drinkIngredients, function(index, value){
+    $('#questions').append('<br> - ' + value);
+  });
+};
