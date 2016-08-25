@@ -8,7 +8,7 @@ var createQuestions = function(questions) {
 
 var createIngredients = function(ingredients) {
   this.ingredients = ingredients;
-}
+};
 
 var createPantry = function(strong, salty, bitter, sweet, fruity) {
   this.strong = strong;
@@ -16,7 +16,7 @@ var createPantry = function(strong, salty, bitter, sweet, fruity) {
   this.bitter = bitter;
   this.sweet = sweet;
   this.fruity = fruity;
-}
+};
 
 var userPreferences = {
   strong : '',
@@ -24,4 +24,4 @@ var userPreferences = {
   bitter : '',
   sweet : '',
   fruity : ''
-}
+};
