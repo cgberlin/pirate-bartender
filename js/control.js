@@ -55,8 +55,18 @@ function tellPicky(){
 };
 
 function displayDrink(Ingredients) {
-  $('#questions').text("I made ye a drink with a");
+  var cocktail = randomCocktail();
+  $('#questions').text("I made ye a " + ' ' + cocktail);
   $.each(Ingredients, function(index, value){
     $('#questions').append('<br> - ' + value);
   });
 };
+
+function randomCocktail(){
+  var firstName = ['Salty', 'Purple', 'Pirate', 'Fluffy', 'Prickly', 'Sticky'];
+  var secondName = ['Porcupine', 'Sword', 'Fish', 'Ship', 'Sabre', 'Pontoon'];
+  var randomNumber = createRandom(firstName);
+  var randomNumberTwo = createRandom(secondName);
+  var cocktailMade = randomNumber + ' ' + randomNumberTwo;
+  return cocktailMade;
+}

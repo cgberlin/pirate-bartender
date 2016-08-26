@@ -61,3 +61,12 @@ function createRandom(TheArray){
   var randomMade = TheArray[Math.floor(Math.random() * TheArray.length)];
   return randomMade;
 };
+
+function randomCocktail(){
+  var firstName = ['Salty', 'Purple', 'Pirate', 'Fluffy', 'Prickly', 'Sticky'];
+  var secondName = ['Porcupine', 'Sword', 'Fish', 'Ship', 'Sabre', 'Pontoon'];
+  var randomNumber = createRandom(firstName);
+  var randomNumberTwo = createRandom(secondName);
+  var cocktailMade = randomNumber + ' ' + randomNumberTwo;
+  return cocktailMade;
+}
