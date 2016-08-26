@@ -1,7 +1,6 @@
 
 var questionCount = 0;
 
-
 var createQuestions = function(questions) {
   this.questions = questions;
 };
