@@ -1,0 +1,13 @@
+*{
+  box-sizing:border-box;
+  font-family: 'Baloo Chettan', cursive;
+}
+.main-container {
+  display:flex;
+  flex-flow:column;
+  align-items:center;
+  justify-content:space-around;
+}
+#main-title {
+  text-align:center;
+}
