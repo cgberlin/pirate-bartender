@@ -1,20 +1,20 @@
 
 var questionCount = 0;
 
-var createQuestions = function(questions) {
-  this.questions = questions;
+var createQuestions = function(Questions) {
+  this.questions = Questions;
 };
 
-var createIngredients = function(ingredients) {
-  this.ingredients = ingredients;
+var createIngredients = function(Ingredients) {
+  this.ingredients = Ingredients;
 };
 
-var createPantry = function(strong, salty, bitter, sweet, fruity) {
-  this.strong = strong,
-  this.salty = salty,
-  this.bitter = bitter,
-  this.sweet = sweet,
-  this.fruity = fruity
+var createPantry = function(Strong, Salty, Bitter, Sweet, Fruity) {
+  this.strong = Strong,
+  this.salty = Salty,
+  this.bitter = Bitter,
+  this.sweet = Sweet,
+  this.fruity = Fruity
 };
 
 var userPreferences = {
@@ -57,7 +57,7 @@ var bartender = {
   },
 };
 
-function createRandom(array){
-  var randomMade = array[Math.floor(Math.random() * array.length)];
+function createRandom(TheArray){
+  var randomMade = TheArray[Math.floor(Math.random() * TheArray.length)];
   return randomMade;
 };

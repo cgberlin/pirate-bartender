@@ -54,9 +54,9 @@ function tellPicky(){
   $('#questions').text("Can't be so picky matey!!!");
 };
 
-function displayDrink(drinkIngredients) {
+function displayDrink(Ingredients) {
   $('#questions').text("I made ye a drink with a");
-  $.each(drinkIngredients, function(index, value){
+  $.each(Ingredients, function(index, value){
     $('#questions').append('<br> - ' + value);
   });
 };
